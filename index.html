@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
+ 
+  <title> Game theory- Incontext of the Sports conflicts </title>
+  <link rel="icon" type="image/x-icon" href="C:\Users\User\OneDrive\Documents\Game theory html\favicon.ico">
+
+  <link rel="stylesheet" href="style1.css">
+  
+  <style>
+    body {
+          background-color:black;
+         }
+    
+    h1 {
+        text-align:center;
+        color:#DCDCDC;
+    }
+
+    h2 {
+        text-align:center;
+        color:#FFEBCD;
+    }
+
+    p {
+       text-align:center;
+       color:#FFFAF0;
+    }
+    
+    table {
+       margin: 0 auto;
+       border-collapse: collapse;
+       background-color: black;
+       border: 2px solid #A9A9A9;
+    }
+
+    th, td { 
+       padding: 10px;
+       text-align: center;
+       border-collapse: collapse;
+       border: 2px solid #A9A9A9;    
+    }
+
+    th {
+       background-color:black;
+    }
+
+    td {
+       background-color:black;
+       color:#FFFAF0;
+    }
+
+    select, input[type="button"] {
+            margin: 10px;
+    }
+
+    input[type="button"] {
+        background-color: #3399ff;
+        color: #FFFAF0;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+        background-color: #0056b3;
+    }
+
+    #Extensiveform {
+       text-align:center; 
+       background-color:black;
+       display:none;
+    }
+     
+    button {
+      display: block;
+      margin: 0 auto;
+      border-radius: 12px;
+      padding: 14px 40px;
+      background-color:black;
+      color: #66ffb3;
+      border:4px solid #66ffb3;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h1> <q> <b> In the spirit of the game: <br> Application of game theory in  sports conflicts </b> </q> </h1> 
+
+  <h3 style="color:#ffb3b3; text-align: center;"> Utpal Shetty </h3>     
+
+  <h2> <b> What is this all about ?</b> </h2>
+
+  <p> Game theory revolves around the analysis of how decision makers make decisions with or without the knowledge of reactions and choices of other decision makers. A <q><i> game </i></q> in general is defined as any interaction between two or more people, where the outcomes of interaction depends on what everybody does and everybody has different levels of happiness for different outcomes.</p>
+<p> In the recently concluded 19th Asian games, that took place in Hangzhou, China, 483 events in 40 sports took place. One among them was Kabaddi. In the final of Men's kabaddi between India and Iran, with 1 minute and 5 seconds remaining on the clock, there was a conflict between the two teams regarding the points that has to be given to an Indian raider for a particular raid. The decision was to be made by referees but neither of the two parties seemed to agree on a neutral solution. So this is an attempt to analyze this game based on game theory. </p>
+
+  <h2> <b> What actually happened ?</b> </h2>
+  <p> In the above mentioned game, both the teams were tied at 28 points each (the actual match points may vary). The raider from the Indian team goes to raid, at this point, one Iranian defender steps out of bonds (which lends one point to the India) and the Indian raider goes into the lobby without touching the opponent (which lends one point to Iran). Following the raider, three more Iranian players went into the lobby (this is where the confusion starts, whether to lend three points to India or not). Now due to rule changes in Pro-Kabaddi league (professional league in India) that took place few months earlier, there was a possibility that those rules were not applied to Asian games. Due to the confusion among officials and referees, regarding which rule to follow, they were stuck in between an altercation, where the Indians were not satisfied with <span style= "color: #0056b3;"><b> 1-1 </b></span> ruling of the officials. (The exact rules and subsequent reason for demand of points by each of the involved parties are not of interest here, rather we are focused on their demands.)</p>
+
+  <table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th colspan="2" style="color:#47d147;"> IRAN </th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th style="color:#ff66ff;"> Accept </th>
+        <th style="color:#ffdb4d;"> Reject </th>
+    </tr>
+    <tr> 
+        <th rowspan="2" style="text-align:right;color:#3399ff;"> INDIA </th>
+        <th  style="color:#ff66ff;"> Accept </th>
+        <td><span style="color:#3399ff;"><b>1</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>1</b></span> , <span style="color:#47d147;"><b>0</b></span></td>
+    </tr>
+    <tr>
+        <th style="color:#ffdb4d;"> Reject </th>
+        <td><span style="color:#3399ff;"><b>0</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>0</b></span> , <span style="color:#47d147;"><b>0</b></span></td>
+    </tr>
+  </table>
+
+  <p> In the above displayed payoff matrix, the two actions of the teams are displayed. They can either <span style="color:#ff66ff;"><b><i>Accept</i></b></span> or <span style="color:#ffdb4d;"><b><i> Reject </i></b></span> the decision taken by the officials. In each case, their respective payoffs are mentioned. The number on the <span style="color:#3399ff;"> left </span> of each payoff cell is the payoff of team <span style="color:#3399ff;"><b>INDIA</b></span> and the number on the <span style="color:#47d147;"> right </span> is the payoff of team <span style="color:#47d147;"><b> IRAN </b></span>.</p> 
+
+  <h2>Instructions:</h2>
+  <p> 1.You will be playing as Team India.</p>
+  <p> 2.You are the captain of Indian team</p>
+  <p> There will be 25 rounds of negotiation for you to develop your strategy and play it</p>
+  <p> All the best !!!</p>
+ 
+  <h2>Let's play, Shall we?</h2>
+  <table>
+      <tr>
+          <th style="color:#FFFAF0;">Round</th>
+          <th style="color:#FFFAF0;">India (Your Choice)</th>
+          <th style="color:#FFFAF0;">Iran</th>
+          <th style="color:#FFFAF0;">India (Your Payoff)</th>
+          <th style="color:#FFFAF0;">Iran's payoff</th>
+      </tr>
+      <tbody id="resultsTableBody">
+      </tbody>
+  </table>
+
+  <form id="choiceForm">
+     <label for="player1" style="color:#FFFAF0;">Your Decision:</label>
+     <select id="player1" name="player1">
+         <option value="Accept">Accept</option>
+         <option value="Reject">Reject</option>
+     </select>
+  
+     <input type="button" value="Play Round" onclick="playRound()">
+  </form>
+
+  <script>
+     var round = 1;
+     var resultsTableBody = document.getElementById("resultsTableBody");
+     var choiceForm = document.getElementById("choiceForm");
+
+     var player2Choices = ["Reject","Reject","Accept"];
+     player2Choices  =      player2Choices.concat(["Accept","Accept","Accept","Reject","Accept","Reject","Accept","Reject","Reject","Accept","Accept","Reject","Reject","Reject","Reject","Accept","Accept","Accept","Accept","Accept","Reject","Accept"]);
+
+     function playRound() {
+         var player1Choice = document.getElementById("player1").value;
+         var player2Choice = player2Choices[round - 1];
+
+         var player1Payoff, player2Payoff;
+   	 if (player1Choice === "Accept" && player2Choice === "Accept") {
+             player1Payoff = 1;
+             player2Payoff = 1;
+         } else if (player1Choice === "Accept" && player2Choice === "Reject") {
+             player1Payoff = 1;
+             player2Payoff = 0;
+         } else if (player1Choice === "Reject" && player2Choice === "Accept") {
+             player1Payoff = 0;
+             player2Payoff = 1;
+         } else if (player1Choice === "Reject" && player2Choice === "Reject") {
+             player1Payoff = 0;
+             player2Payoff = 0;
+         }
+
+         var row = document.createElement("tr");
+         row.innerHTML = `
+                <td style="color:#FFFAF0;">${round}</td>
+                <td style="color:#FFFAF0;">${player1Choice}</td>   
+                <td style="color:#FFFAF0;">${player2Choice}</td>
+                <td style="color:#FFFAF0;">${player1Payoff}</td>
+                <td style="color:#FFFAF0;">${player2Payoff}</td>
+            `;  
+         resultsTableBody.appendChild(row);
+
+         round++;
+         if (round > 25) {
+             choiceForm.style.display = "none";
+         }
+      }
+  </script>
+  <br>
+  <br>
+  <br>
+  
+ 
+  <button onclick="myFunction()">What if both demand separate payoffs ? <br> Press twice :)</button>
+ 
+
+  <div id="Extensiveform" style="color:#FFFAF0;">
+  <p> Now when we look closely in the above game, one might observe that the dominant strategy i.e., the one strategy that gives the player an upperhand in terms of payoff is <span style="color:#ff66ff;">accepting</span> the decision given by referees, irrespective of what <span style="color:#47d147;"><b> IRAN </b></span> does.</p>
+  <p> But in real-life sports conflicts, the decision might not be so easy to take. Partly, because more often than not, in such conflicts, both the parties would be demanding certain payoff or results.</p>
+  <p> In this particular scenario, team <span style="color:#3399ff;"><b>INDIA</b></span> would be demanding <span style="color:#3399ff;"><b>4:1</b></span> in their favour, whereas team <span style="color:#47d147;"><b> IRAN </b></span> would be demanding <span style="color:#47d147;"><b>1:1</b></span> each. This conflict, then can be viewed through the lens of an extensive form game, whose induced normal form (payoff matrix) is given as:</p>
+
+  <table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th colspan="4" style="color:#47d147;"> IRAN </th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th style="color:#ff66ff;">Aa</th>
+        <th><span style="color:#ff66ff;">A</span><span style="color:#ffdb4d;">r</span></th>
+        <th><span style="color:#ffdb4d;">R</span><span style="color:#ff66ff;">a</span></th>
+        <th style="color:#ffdb4d;">Rr</th>
+    </tr>
+    <tr>
+        <th rowspan="4" style="text-align:right;color:#3399ff;"> INDIA </th>
+        <th style="color:#ff66ff;">Aa</th>
+        <td><span style="color:#3399ff;"><b>1</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>1</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>1</b></span> , <span style="color:#47d147;"><b>0</b></span></td>
+        <td><span style="color:#3399ff;"><b>1</b></span> , <span style="color:#47d147;"><b>0</b></span></td>
+    </tr>
+    <tr>
+        <th><span style="color:#ff66ff;">A</span><span style="color:#ffdb4d;">r</span></th>
+        <td><span style="color:#3399ff;"><b>1</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>1</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>1</b></span> , <span style="color:#47d147;"><b>0</b></span></td>
+        <td><span style="color:#3399ff;"><b>1</b></span> , <span style="color:#47d147;"><b>0</b></span></td>
+    </tr>
+    <tr>
+        <th><span style="color:#ffdb4d;">R</span><span style="color:#ff66ff;">a</span></th>
+        <td><span style="color:#3399ff;"><b>0</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>0</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>4</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>4</b></span> , <span style="color:#47d147;"><b>0</b></span></td>
+    </tr>
+    <tr>
+        <th style="color:#ffdb4d;">Rr</th>
+        <td><span style="color:#3399ff;"><b>0</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>0</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>0</b></span> , <span style="color:#47d147;"><b>1</b></span></td>
+        <td><span style="color:#3399ff;"><b>0</b></span> , <span style="color:#47d147;"><b>0</b></span></td>
+    </tr>
+  </table>
+  
+  <h2> How do we interpret these actions and their payoff ??</h2>
+  
+  <p> Before we delve into interpretation of the actions and their payoffs, we need to look at the tree representation of this extensive game.</p>
+
+  <img src="extensive_form_tree.jpg" alt="Game tree">  
+
+  <br>
+  <br>  
+
+  <p> Here, if <span style="color:#3399ff;"><b>INDIA</b></span> plays the strategy of <span style="color:#ffdb4d;">R</span><span style="color:#ff66ff;">a</span> and <span style="color:#47d147;"><b> IRAN </b></span> plays <span style="color:#ffdb4d;">Rr</span> then we reach the payoff of (4 , 0) using the game tree, as follows: </p>
+  
+  <img src="extensive_form_explanation.jpg" alt="Explanation of payoff using game tree">
+
+  <p> The <span style="color:#ffdb4d;">R</span> in <span style="color:#ffdb4d;">R</span><span style="color:#ff66ff;">a</span> refers to the action taken by  <span style="color:#3399ff;"><b>INDIA</b></span> in the first decision node followed by <span style="color:#ff66ff;">a</span> in the second decision node. Similarly, for <span style="color:#47d147;"><b> IRAN </b></span>, <span style="color:#ffdb4d;">R</span> in the first decision node for them and <span style="color:#ffdb4d;">r</span> in the subsequent node. Thus, reaching the payoff of (4 , 0).</p>
+
+  <p>If they had had both considered taking <span style="color:#ff66ff;">Aa</span> instead, the extensive game would have finished with their first actions itself, because after playing <span style="color:#ff66ff;">A</span> in their first decision nodes, they would reach a payoff of (1 , 1) as per the game tree.</p>
+
+  <br>
+  <br>
+  <br>
+
+  <h2>Wonder how this works out ?</h2>
+    <table>
+       <tr>
+           <th style="color:#FFFAF0;">Round</th>
+           <th style="color:#FFFAF0;">India (node 1)</th>
+           <th style="color:#FFFAF0;">India (node 2)</th>
+           <th style="color:#FFFAF0;">Iran (node 1)</th>
+           <th style="color:#FFFAF0;">Iran (node 2)</th>
+           <th style="color:#FFFAF0;">India (your payoff)</th>
+           <th style="color:#FFFAF0;">Iran's payoff</th>
+       </tr>
+       <tbody id="resultsTableBody2">
+       </tbody>
+    </table>
+
+    <form id="choiceForm1">
+     <label for="player011" style="color:#FFFAF0;">Your Decision:</label>
+     <select id="player011" name="player011">
+         <option value="Accept">Accept</option>
+         <option value="Reject">Reject</option>
+     </select>
+   <form id="choiceForm2">
+     <label for="player012" style="color:#FFFAF0;">Your Decision:</label>
+     <select id="player012" name="player012">
+         <option value="Accept">Accept</option>
+         <option value="Reject">Reject</option>
+     </select>
+    <input type="button" value="Play Round" onclick="playRound1()">
+  </form>
+
+  <script>
+      var round1 = 1;
+      var resultsTableBody2 = document.getElementById("resultsTableBody2");
+      var choiceForm1 = document.getElementById("choiceForm1");
+      var choiceForm2 = document.getElementById("choiceForm2");      
+
+      var player21choices = ["Reject","Reject","Accept"];
+      player21choices = player21choices.concat(["Accept","Accept","Accept","Reject","Accept","Reject","Accept","Reject","Reject","Accept","Accept","Reject","Reject","Reject","Reject","Accept","Accept","Accept","Accept","Accept","Reject","Accept"]);
+      
+      var player22choices = ["Reject","Reject","Reject"]; 
+      player22choices = player22choices.concat(["Accept","Reject","Reject","Accept","Reject","Reject","Accept","Reject","Accept","Accept","Accept","Accept","Accept","Reject","Reject","Accept","Accept","Accept","Accept","Reject","Reject","Accept"]);
+   
+      function playRound1() {
+          var player11choice = document.getElementById("player011").value;
+          var player12choice = document.getElementById("player012").value;
+          var player21choice = player21choices[round1 - 1];
+          var player22choice = player22choices[round1 - 1];
+        
+          var player1payoff, player2payoff;
+          if (player11choice === "Accept" && player12choice === "Accept" && player21choice === "Accept" && player22choice === "Accept") {
+              player1payoff = 1;
+              player2payoff = 1;
+          } else if (player11choice === "Accept" && player12choice === "Accept" && player21choice === "Accept" && player22choice === "Reject") {
+              player1payoff = 1;
+              player2payoff = 1;
+          } else if (player11choice === "Accept" && player12choice === "Accept" && player21choice === "Reject" && player22choice === "Accept") {
+              player1payoff = 1;
+              player2payoff = 0;
+          } else if (player11choice === "Accept" && player12choice === "Accept" && player21choice === "Reject" && player22choice === "Reject") {
+              player1payoff = 1;
+              player2payoff = 0;
+          } else if (player11choice === "Accept" && player12choice === "Reject" && player21choice === "Accept" && player22choice === "Accept") {
+              player1payoff = 1;
+              player2payoff = 1;
+          } else if (player11choice === "Accept" && player12choice === "Reject" && player21choice === "Accept" && player22choice === "Reject") {
+              player1payoff = 1;
+              player2payoff = 1;
+          } else if (player11choice === "Accept" && player12choice === "Reject" && player21choice === "Reject" && player22choice === "Accept") {
+              player1payoff = 1;
+              player2payoff = 0;
+          } else if (player11choice === "Accept" && player12choice === "Reject" && player21choice === "Reject" && player22choice === "Reject") {
+              player1payoff = 1;
+              player2payoff = 0;
+          } else if (player11choice === "Reject" && player12choice === "Accept" &&  player21choice === "Accept" && player22choice === "Accept") {
+              player1payoff = 0;
+              player2payoff = 1;
+          } else if (player11choice === "Reject" && player12choice === "Accept" && player21choice === "Accept" && player22choice === "Reject") {
+              player1payoff = 0;
+              player2payoff = 1;
+          } else if (player11choice === "Reject" && player12choice === "Accept" && player21choice === "Reject" && player22choice === "Accept") {
+              player1payoff = 4;
+              player2payoff = 1;
+          } else if (player11choice === "Reject" && player12choice === "Accept" && player21choice === "Reject" && player22choice === "Reject") {
+              player1payoff = 4;
+              player2payoff = 0;
+          } else if (player11choice === "Reject" && player12choice === "Reject" && player21choice === "Accept" && player22choice === "Accept") {
+              player1payoff = 0;
+              player2payoff = 1;
+          } else if (player11choice === "Reject" && player12choice === "Reject" && player21choice === "Accept" && player22choice === "Reject") {
+              player1payoff = 0;
+              player2payoff = 1;
+          } else if (player11choice === "Reject" && player12choice === "Reject" && player21choice === "Reject" && player22choice === "Accept") {
+              player1payoff = 0;
+              player2payoff = 1;
+          } else if (player11choice === "Reject" && player12choice === "Reject" && player21choice === "Reject" && player22choice === "Reject") {
+              player1payoff = 0;
+              player2payoff = 0;
+          }
+	  
+ 	  var row = document.createElement("tr");
+         row.innerHTML = `
+                <td style="color:#FFFAF0;">${round1}</td>
+                <td style="color:#FFFAF0;">${player11choice}</td>   
+                <td style="color:#FFFAF0;">${player12choice}</td> 
+		<td style="color:#FFFAF0;">${player21choice}</td>
+                <td style="color:#FFFAF0;">${player22choice}</td> 
+		<td style="color:#FFFAF0;">${player1payoff}</td>
+                <td style="color:#FFFAF0;">${player2payoff}</td>
+            `;  
+         resultsTableBody2.appendChild(row);
+
+         round1++;
+         if (round1 > 25) {
+             choiceForm1.style.display = "none";
+             choiceForm2.style.display = "none";
+         }
+      }
+  </script>
+  
+  <br>
+  <br>
+  <br>
+  <hr>
+
+  <pre style="font-size:15px; font-family: 'Solway',serif;">
+My work here is a product of my incidental stumblings with Game theory. From knowing just its name to creating this project has been a journey filled with curiosity and experiences to say the least.
+There are several good courses on this subject, but the one I went with to understand the basics of game theory was the <a href="https://www.coursera.org/learn/game-theory-1"> Stanford course on game theory</a>. This course was vital in nurturing my interest <br> on the subject.
+With this newly found enthusiasm and fragment of knowledge, my next course of action was to delve into the actual application of game theory in social constructs. One of the projects that stands out <br> in this regard is the <a href="https://sti-cs.org/confoobio/">ConFooBio project by Nils Bunnefeld</a>. This project is comprehensive and is definitely worth a read, if you want to know how game theory particularly can be used in context of<br> Biodiversity conservation.
+My exploration with game theory continues and hope so we can meet on some other page with something interesting to look into.
+In case if I have missed something or if you didn't get your payoff :), please feel free to mail at shettyutpal18@gmail.com. 
+
+  </pre>
+  
+  </div>
+  
+  <script>
+  function myFunction() {
+     var x = document.getElementById("Extensiveform");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
